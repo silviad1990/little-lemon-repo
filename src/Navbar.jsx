@@ -1,7 +1,14 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
+import "./Navbar.css";
+
+import logo1 from "/Users/silviadima/Desktop/Projects/little-lemon/src/imgs/Asset 16@4x.png";
+import cartImg from "/Users/silviadima/Desktop/Projects/little-lemon/src/imgs/carts.png";
+
 function Navbar() {
   return (
     <>
-      <nav>
+      <nav className="navMenu">
+        <img className="header__logo" src={logo1} alt="little lemon logo" />
         <ul>
           <li>
             <a href="./home">Home</a>
@@ -21,6 +28,7 @@ function Navbar() {
           <li>
             <a href="./login">Login</a>
           </li>
+          <img className="header__cart-img" src={cartImg} alt="cart image" />
         </ul>
       </nav>
     </>

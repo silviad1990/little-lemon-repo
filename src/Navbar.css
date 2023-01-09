@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Markazi+Text:wght@500&family=Poppins:wght@200&display=swap");
+
+.navMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.header__logo {
+  height: 3rem;
+  width: auto;
+  padding: 7.5px 10px 7.5px 0;
+}
+
+.navMenu ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.navMenu a {
+  display: flex;
+  font-family: "Markazi Text", serif;
+  color: #495e57;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.navMenu a:hover {
+  color: #f4ce14;
+}
+
+.header__cart-img {
+  display: flex;
+  padding: 0 30px;
+  height: 2rem;
+  width: auto;
+}

@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  position: absolute;
+}
+
+img {
+  width: 1.5rem;
+  padding: 1.5rem;
+}

@@ -1,10 +1,13 @@
-import logo1 from "/Users/silviadima/Desktop/Projects/little-lemon/src/imgs/Asset 16@4x.png";
+import Navbar from "./Navbar";
+import "./Header.css";
+
+
 
 function Header() {
   return (
-    <>
-      <img src={logo1} alt="little lemon logo" />
-    </>
+    <div className="header">
+      <Navbar />
+    </div>
   );
 }
 
