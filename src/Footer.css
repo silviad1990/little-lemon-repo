@@ -1,83 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Markazi+Text:wght@500&family=Poppins:wght@200&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-#footer__main {
-  position: relative;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: white;
-  height: auto;
-  width: 100vw;
-  padding-top: 40px;
-  font-family: "Markazi Text", serif;
-  color: black;
-  border: solid 1px #333;
-  padding-left: 60px;
-  padding-right: 60px;
-}
-
-.footer__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-auto-rows: auto;
-  grid-gap: 10px;
-  margin: 0 auto;
-  max-width: 100%;
-  /* padding-left: 180px; */
-}
-
-@media (max-width: 1024px) {
-  .footer-grid {
-    padding-left: 20px;
-  }
-}
-@media (max-width: 700px) {
-  .grid-adjustable-columns {
-    display: grid;
-    grid-auto-flow: row;
-  }
-}
-
-@media (min-width: 701px) {
-  .grid-adjustable-columns {
-    width: min(1000px, 75rem);
-    margin: 0 auto;
-    grid-auto-flow: column;
-    gap: 1em;
-  }
+.footer {
+  padding: 5%;
+  display: flex;
+  flex: auto;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  font-family: "Karla", sans-serif;
+  border-top: solid black 1px;
 }
 
 .footer__logo-img {
-  height: 12rem;
-  width: auto;
+  width: 6rem;
+  height: auto;
 }
 
-ul {
+.footer__title {
+  font-family: "Karla", sans-serif;
+}
+
+.footer__2 {
+  justify-content: flex-start;
+}
+
+.footer__2 ul {
   list-style-type: none;
-  display: inline;
+  padding: 0;
 }
 
-a {
+.footer__2 a {
   text-decoration: none;
   color: black;
+  list-style-type: none;
 }
 
-section {
-  color: black;
-  padding: 20px;
-}
-
-h1 {
-  text-align: center;
-  margin: 80px 0;
-}
-
-h4 {
-  font-size: 1.2rem;
+.footer__3 ul {
+  list-style-type: none;
+  padding: 0;
 }

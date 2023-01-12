@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Markazi+Text:wght@500&family=Poppins:wght@200&display=swap");
 
-.navMenu {
+/* .navbar {
   display: flex;
+  flex: 1;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   padding: 0 15px;
-}
+} */
 
 .header__logo {
   height: 3rem;
@@ -13,13 +15,14 @@
   padding: 7.5px 10px 7.5px 0;
 }
 
-.navMenu ul {
+.navbar__links {
   display: flex;
+  flex-direction: row;
   list-style-type: none;
 }
 
-.navMenu a {
-  display: flex;
+.nav-link {
+  /* display: flex; */
   font-family: "Markazi Text", serif;
   color: #495e57;
   text-decoration: none;
@@ -28,12 +31,12 @@
   padding: 10px;
 }
 
-.navMenu a:hover {
+.nav-link:hover {
   color: #f4ce14;
 }
 
 .header__cart-img {
-  display: flex;
+  /* display: flex; */
   padding: 0 30px;
   height: 2rem;
   width: auto;

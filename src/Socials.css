@@ -1,9 +1,8 @@
-.container {
+.socials__container {
   display: flex;
-  position: absolute;
+  justify-content: space-between;
 }
 
-img {
-  width: 1.5rem;
-  padding: 1.5rem;
+.socials__container img {
+  width: 30px;
 }

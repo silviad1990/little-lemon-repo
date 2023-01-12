@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Karla&family=Markazi+Text:wght@500&family=Poppins:wght@200&display=swap");
+
+/* .container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  align-content: stretch;
+  position: relative;
+  background-color: #495e57;
+  margin: 0;
+} */
+
+.container__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+  padding-left: 15%;
+  padding-right: 5rem;
+}
+
+.container__right {
+  flex: 1;
+  flex-direction: row;
+  padding-right: 15%;
+  padding-left: 10%;
+}
+
+.hero-section__title {
+  justify-content: flex-start;
+
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.hero-section__sub-title {
+  margin: 0;
+  font-weight: 200;
+}
+
+.hero-section__description {
+  margin-bottom: 2rem;
+  font-family: "Karla", sans-serif;
+}
+
+.hero-section__img {
+  width: 25vw;
+  max-width: 25vw;
+  padding-top: 5rem;
+  /* max-width: 100%; */
+
+  margin: 0calc (-50vw + 50%);
+}

@@ -15,59 +15,53 @@ class Navbar extends Component {
   render() {
     return (
       <Router>
-        <>
-          <nav className="navMenu">
-            <img className="header__logo" src={logo1} alt="little lemon logo" />
-            <ul>
-              <li>
-                <Link to={"/"} className="nav-link">
-                  {" "}
-                  Home{" "}
-                </Link>
-              </li>
-              <li>
-                <Link to={"/about"} className="nav-link">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link to={"/menu"} className="nav-link">
-                  Menu
-                </Link>
-              </li>
-              <li>
-                <Link to={"/reservation"} className="nav-link">
-                  {" "}
-                  Reservation{" "}
-                </Link>
-              </li>
-              <li>
-                <Link to={"/book-online"} className="nav-link">
-                  Book Online
-                </Link>
-              </li>
-              <li>
-                <Link to={"/login"} className="nav-link">
-                  Login
-                </Link>
-              </li>
-              <img
-                className="header__cart-img"
-                src={cartImg}
-                alt="cart image"
-              />
-            </ul>
-          </nav>
-          <hr />
-          <Routes>
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/menu" component={Menu} />
-            <Route path="/reservation" component={Reservation} />
-            <Route path="/book-online" component={BookOnline} />
-            <Route path="/login" component={Login} />
-          </Routes>
-        </>
+        {/* <nav className="navbar"> */}
+        <img className="header__logo" src={logo1} alt="little lemon logo" />
+        <ul className="navbar__links">
+          <li>
+            <Link to={"/"} className="nav-link">
+              {" "}
+              Home{" "}
+            </Link>
+          </li>
+          <li>
+            <Link to={"/about"} className="nav-link">
+              About
+            </Link>
+          </li>
+          <li>
+            <Link to={"/menu"} className="nav-link">
+              Menu
+            </Link>
+          </li>
+          <li>
+            <Link to={"/reservation"} className="nav-link">
+              {" "}
+              Reservation{" "}
+            </Link>
+          </li>
+          <li>
+            <Link to={"/book-online"} className="nav-link">
+              Book Online
+            </Link>
+          </li>
+          <li>
+            <Link to={"/login"} className="nav-link">
+              Login
+            </Link>
+          </li>
+          <img className="header__cart-img" src={cartImg} alt="cart image" />
+        </ul>
+        {/* </nav> */}
+
+        <Routes>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/menu" component={Menu} />
+          <Route path="/reservation" component={Reservation} />
+          <Route path="/book-online" component={BookOnline} />
+          <Route path="/login" component={Login} />
+        </Routes>
       </Router>
     );
   }
