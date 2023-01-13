@@ -1,22 +1,24 @@
-function Card(props) {
+import Card from "react-bootstrap/Card";
+import "./Card.css";
+
+function CardMain(props) {
   return (
-    <div className="card">
-      <img
-        className="card__img-top"
+    <Card style={{ width: "min-content" }}>
+      <Card.Img
+        variant="top"
         src={props.img}
-        alt="salad dish"
-        style={{ width: "15rem" }}
+        style={{ width: "17rem", height: "10rem", objectFit: "cover" }}
       />
-      <div className="card__body">
-        <h5 className="card__title">{props.dishTitle}</h5>
-        <h6 className="card__price">{props.dishPrice}</h6>
-        <p className="card__text">{props.dishText}</p>
+      <Card.Body>
+        <Card.Title className="card__title">{props.dishTitle}</Card.Title>
+
+        <Card.Text>{props.dishText}</Card.Text>
         <a className="card__link" href="/">
           Order for delivery
         </a>
-      </div>
-    </div>
+      </Card.Body>
+    </Card>
   );
 }
 
-export default Card;
+export default CardMain;

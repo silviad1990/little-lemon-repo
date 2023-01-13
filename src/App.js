@@ -67,8 +67,13 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
   },
   about: {
+    display: "flex",
     flex: 1,
+    flexDirection: "row",
+    flexWrap: "wrap",
     backgroundColor: "white",
+    position: "relative",
+    justifyContent: "space-between",
   },
   footer: {
     // display: "flex",

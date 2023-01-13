@@ -5,7 +5,7 @@
   display: flex;
   flex: auto;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   justify-items: center;
   flex-wrap: wrap;
   list-style-type: none;

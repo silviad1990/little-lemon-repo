@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Karla&family=Markazi+Text:wght@500&family=Poppins:wght@200&display=swap");
 
 button {
-  width: 150px;
-  height: 45px;
+  width: 200px;
+  height: 60px;
   font-family: "Karla", sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
   text-align: center;
   text-decoration: none;
@@ -23,5 +23,6 @@ button:hover {
   box-shadow: 0px 15px 20px rgba(6, 0, 0, 0.1);
   color: #fff;
   transition: all 0.5s ease 0s;
+  text-decoration: underline;
   /* transform: trans7ateY(-7px); */
 }

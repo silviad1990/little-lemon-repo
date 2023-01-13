@@ -1,0 +1,25 @@
+.about__container-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+  padding-left: 15%;
+  padding-right: 5rem;
+}
+
+.about__container-right {
+  flex: 1;
+  flex-direction: row;
+  padding-right: 15%;
+  padding-left: 10%;
+}
+
+.img {
+  width: 13rem;
+}
+
+.about__img1 {
+}
+
+.about__img2 {
+}

@@ -12,13 +12,14 @@
 .header__logo {
   height: 3rem;
   width: auto;
-  padding: 7.5px 10px 7.5px 0;
+  padding: 7.5px 10px 7.5px 15%;
 }
 
 .navbar__links {
   display: flex;
   flex-direction: row;
   list-style-type: none;
+  padding-right: 15%;
 }
 
 .nav-link {

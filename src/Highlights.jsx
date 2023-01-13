@@ -1,5 +1,5 @@
 import Button from "./Button";
-import Card from "./Card";
+import CardMain from "./Card";
 import "./Highlights.css";
 import saladImg from "/Users/silviadima/Desktop/Projects/little-lemon/src/imgs/salad.jpg";
 import bruschettaImg from "/Users/silviadima/Desktop/Projects/little-lemon/src/imgs/bruschetta.jpg.webp";
@@ -12,21 +12,21 @@ function Highlights() {
         <Button className="highlights__btn" title="Online Menu" />
       </section>
       <section className="highlights__cards">
-        <Card
+        <CardMain
           className="card"
           img={saladImg}
           dishTitle="Greek Salad"
           dishPrice="$9.99"
           dishText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ."
         />
-        <Card
+        <CardMain
           className="card"
           img={bruschettaImg}
           dishTitle="Bruschetta"
           dishPrice="$7.99"
           dishText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ."
         />
-        <Card
+        <CardMain
           className="card"
           img={cakeImg}
           dishTitle="Lemon Cake"
