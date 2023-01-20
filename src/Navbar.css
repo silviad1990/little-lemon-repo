@@ -1,44 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Markazi+Text:wght@500&family=Poppins:wght@200&display=swap");
 
-/* .navbar {
+.navbar {
+  background-color: #fff;
+  color: #000;
+  height: 70px;
+}
+
+.navbar ul {
   display: flex;
-  flex: 1;
+  padding: 24px;
+}
+
+.navbar a {
+  color: #000;
+  margin: 0 9px;
+}
+
+.navbar a:hover {
+  color: var(--primary-color-yellow);
+}
+
+.navbar .flex {
   justify-content: space-between;
-  align-items: center;
-  position: relative;
-  padding: 0 15px;
-} */
+}
 
-.header__logo {
-  height: 3rem;
+.navbar__logo {
+  height: 100%;
   width: auto;
-  padding: 7.5px 10px 7.5px 15%;
-}
-
-.navbar__links {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  padding-right: 15%;
-}
-
-.nav-link {
-  /* display: flex; */
-  font-family: "Markazi Text", serif;
-  color: #495e57;
-  text-decoration: none;
-  font-size: 1.2em;
-  font-weight: 500;
-  padding: 10px;
-}
-
-.nav-link:hover {
-  color: #f4ce14;
+  padding: 5px 0;
 }
 
 .header__cart-img {
-  /* display: flex; */
-  padding: 0 30px;
-  height: 2rem;
+  display: flex;
+  height: 30px;
   width: auto;
 }

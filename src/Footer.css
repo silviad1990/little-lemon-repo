@@ -1,43 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Markazi+Text:wght@500&family=Poppins:wght@200&display=swap");
 
 .footer {
-  padding: 5%;
-  display: flex;
-  flex: auto;
-  flex-direction: row;
-  justify-content: space-evenly;
-  justify-items: center;
-  flex-wrap: wrap;
-  list-style-type: none;
-  font-family: "Karla", sans-serif;
-  border-top: solid black 1px;
+  background-color: #fbdabb;
 }
 
-.footer__logo-img {
+.footer .grid {
+  grid-template-columns: repeat(4, 1fr);
+  align-items: flex-start;
+}
+
+.footer-logo {
   width: 6rem;
   height: auto;
 }
 
-.footer__title {
-  font-family: "Karla", sans-serif;
-}
-
-.footer__2 {
-  justify-content: flex-start;
-}
-
-.footer__2 ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.footer__2 a {
-  text-decoration: none;
-  color: black;
-  list-style-type: none;
-}
-
-.footer__3 ul {
-  list-style-type: none;
-  padding: 0;
+.social-img {
+  width: 30px;
 }
