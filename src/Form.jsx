@@ -1,10 +1,10 @@
 import { useState } from "react";
 
 function Form() {
-  const [name, setName] = useState("");
+  const [, setDate] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
-    setName("");
+    setDate("");
     console.log("form submitted");
   };
 
@@ -12,7 +12,13 @@ function Form() {
     <>
       <form onSubmit={handleSubmit} className="form">
         <div className="form-control">
-          <input type="date" name="Date" placeholder="Date" required />
+          <input
+            id="date"
+            type="date"
+            name="Date"
+            placeholder="Date"
+            required
+          />
         </div>
         <div className="form-control">
           <label for="res-time">Time</label>

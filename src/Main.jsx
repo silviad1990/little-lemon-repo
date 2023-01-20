@@ -1,16 +1,16 @@
 import Showcase from "./Showcase";
 import Specials from "./Specials";
 import About from "./About";
-import Footer from "./Footer";
+
 
 function Main() {
   return (
-    <>
+    <div className="main">
       <Showcase />
       <Specials />
       <About />
-      <Footer />
-    </>
+      
+    </div>
   );
 }
 export default Main;
