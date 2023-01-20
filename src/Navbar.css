@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Markazi+Text:wght@500&family=Poppins:wght@200&display=swap");
 
 .navbar {
+  position: fixed;
   background-color: #fff;
   color: #000;
   height: 70px;
+  border-bottom: solid 5px #333333;
+  z-index: 1000;
+  width: 100%;
 }
 
 .navbar ul {

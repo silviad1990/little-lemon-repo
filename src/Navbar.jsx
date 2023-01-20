@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import logo1 from "/Users/silviadima/Desktop/Projects/little-lemon/src/imgs/Asset 16@4x.png";
 import cartImg from "/Users/silviadima/Desktop/Projects/little-lemon/src/imgs/carts.png";
@@ -10,34 +11,30 @@ function Navbar() {
         <nav>
           <ul className="navbar__list">
             <li>
-              <a className="navbar__link" href="index.html">
+              <a className="navbar__link" href="/">
                 Home
               </a>
             </li>
+
             <li>
-              <a className="navbar__link" href="about.html">
-                About
-              </a>
-            </li>
-            <li>
-              <a className="navbar__link" href="menu.html">
+              <Link className="navbar__link" to="/menu">
                 Menu
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="navbar__link" href="reservation.html">
+              <Link className="navbar__link" to="/reservation">
                 Reservation
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="navbar__link" href="book_online.html">
-                Book Online
-              </a>
+              <Link className="navbar__link" to="/order-online">
+                Order Online
+              </Link>
             </li>
             <li>
-              <a className="navbar__link" href="login.html">
-                Login
-              </a>
+              <Link className="navbar__link" to="/contacts">
+                Contacts
+              </Link>
             </li>
             <a href="cart.html">
               <img className="header__cart-img" src={cartImg} alt="cart" />
