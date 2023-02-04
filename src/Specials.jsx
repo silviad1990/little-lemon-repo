@@ -1,7 +1,7 @@
 import "./Specials.css";
-import saladImg from "/Users/silviadima/Desktop/Projects/little-lemon/src/imgs/salad.jpg";
-import bruschettaImg from "/Users/silviadima/Desktop/Projects/little-lemon/src/imgs/bruschetta.jpg.webp";
-import cakeImg from "/Users/silviadima/Desktop/Projects/little-lemon/src/imgs/lemon-cake.png";
+import saladImg from "/Users/silviadima/Desktop/Projects/LITTLE-LEMON-FOLDER/little-lemon/src/imgs/salad.jpg";
+import bruschettaImg from "/Users/silviadima/Desktop/Projects/LITTLE-LEMON-FOLDER/little-lemon/src/imgs/bruschetta.jpg.webp";
+import cakeImg from "/Users/silviadima/Desktop/Projects/LITTLE-LEMON-FOLDER/little-lemon/src/imgs/lemon-cake.png";
 
 function Specials() {
   return (

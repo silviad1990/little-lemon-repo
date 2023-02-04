@@ -1,6 +1,7 @@
 import "./Showcase.css";
 import "./App.css";
-import Form from "./Form";
+import MainImg from "/Users/silviadima/Desktop/Projects/LITTLE-LEMON-FOLDER/little-lemon/src/imgs/restauranfood.jpg";
+// import Form from "src/pages/Form.jsx";
 
 function Showcase() {
   return (
@@ -19,9 +20,12 @@ function Showcase() {
             </a>
           </div>
 
-          <div className="showcase-form form-card">
-            <h2>Book a table</h2>
-            <Form />
+          <div className="showcase-form ">
+            <img
+              className="showcase-img"
+              src={MainImg}
+              alt="waiter holding a dish"
+            />
           </div>
         </div>
       </section>

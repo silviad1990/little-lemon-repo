@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import logo1 from "/Users/silviadima/Desktop/Projects/little-lemon/src/imgs/Asset 16@4x.png";
-import cartImg from "/Users/silviadima/Desktop/Projects/little-lemon/src/imgs/carts.png";
+import logo1 from "/Users/silviadima/Desktop/Projects/LITTLE-LEMON-FOLDER/little-lemon/src/imgs/Asset 16@4x.png";
+import cartImg from "/Users/silviadima/Desktop/Projects/LITTLE-LEMON-FOLDER/little-lemon/src/imgs/carts.png";
 
 function Navbar() {
   return (

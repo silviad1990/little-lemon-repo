@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./Form.css";
 
 function Form() {
   const [, setDate] = useState("");
@@ -12,6 +13,20 @@ function Form() {
     <>
       <form onSubmit={handleSubmit} className="form">
         <div className="form-control">
+          <label>Number of guests</label>
+          <br></br>
+          <input
+            type="number"
+            name="Number of guests"
+            placeholder="2"
+            min="1"
+            max="10"
+            id="guests"
+          />
+        </div>
+        <div className="form-control">
+          <label>When would you like to book</label>
+          <br></br>
           <input
             id="date"
             type="date"
@@ -21,7 +36,8 @@ function Form() {
           />
         </div>
         <div className="form-control">
-          <label for="res-time">Time</label>
+          <label for="res-time">Choose a time slot</label>
+          <br></br>
           <select id="res-time ">
             <option>17:00</option>
             <option>18:00</option>
@@ -31,17 +47,10 @@ function Form() {
             <option>22:00</option>
           </select>
         </div>
+
         <div className="form-control">
-          <input
-            type="number"
-            name="Number of guests"
-            placeholder="Number of guests"
-            min="1"
-            max="10"
-            id="guests"
-          />
-        </div>
-        <div className="form-control">
+          <label>What is the occasion?</label>
+          <br></br>
           <input
             type="text"
             name="Occasion"

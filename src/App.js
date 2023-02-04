@@ -4,10 +4,10 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Main from "./Main";
-import Menu from "./pages/Menu";
-import Reservation from "./pages/Reservation";
-import OrderOnline from "./pages/OrderOnline";
-import Contacts from "./pages/Contacts";
+import Menu from "./Menu";
+import Reservation from "./Reservation";
+import OrderOnline from "./OrderOnline";
+import Contacts from "./Contacts";
 
 function App() {
   return (

@@ -1,0 +1,18 @@
+.reservation {
+  padding-top: 100px;
+  height: 700px;
+  /* background-color: var(--primary-color-green); */
+  color: #000;
+  position: relative;
+}
+
+.reservation .grid {
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  height: max-content;
+  overflow: hidden;
+}
+
+.reservation .container h1 {
+  grid-column: 1 / span 2;
+}
