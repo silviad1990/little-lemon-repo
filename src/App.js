@@ -1,13 +1,13 @@
 /* eslint-disable default-case */
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import Main from "./Main";
-import Menu from "./Menu";
-import Reservation from "./Reservation";
-import OrderOnline from "./OrderOnline";
-import Contacts from "./Contacts";
+import Navbar from "./components/Navbar/Navbar.js";
+import Footer from "./containers/Footer/Footer.js";
+import Main from "./Main.js";
+import Menu from "./containers/Menu/Menu.js";
+import Reservation from "./containers/Reservation/Reservation.jsx";
+import OrderOnline from "./containers/OrderOnline/OrderOnline.js";
+import Contacts from "./containers/Contacts/Contacts.js";
 
 function App() {
   return (

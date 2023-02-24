@@ -1,5 +1,5 @@
 import "./Footer.css";
-import logo2 from "/Users/silviadima/Desktop/Projects/LITTLE-LEMON-FOLDER/little-lemon/src/imgs/Asset 20@4x.png";
+import logo2 from "/Users/silviadima/Desktop/Projects/LITTLE-LEMON-FOLDER/little-lemon/src/assets/imgs/Asset 20@4x.png";
 
 function Footer() {
   return (

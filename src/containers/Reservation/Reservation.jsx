@@ -1,5 +1,5 @@
-import Form from "./Form";
 import "./Reservation.css";
+import Form from "/Users/silviadima/Desktop/Projects/LITTLE-LEMON-FOLDER/little-lemon/src/components/Form/Form.js";
 
 function Reservation() {
   return (
@@ -7,7 +7,7 @@ function Reservation() {
       <div className="container grid ">
         <h1 className="text-center lg">BOOK A TABLE AT THE LITTLE LEMON</h1>
         <div className="reservation__text">
-          <h4 className="md">
+          <h4 className="md p-4">
             Thank you for choosing the Little Lemon Restaurant 
           </h4>
           <p className="sm">
@@ -19,8 +19,7 @@ function Reservation() {
             seeing you soon!
           </p>
         </div>
-        <div className="reservation__form showcase-form form-card">
-          <h2>Book a table</h2>
+        <div>
           <Form />
         </div>
       </div>

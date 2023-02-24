@@ -1,6 +1,7 @@
 import "./Showcase.css";
-import "./App.css";
-import MainImg from "/Users/silviadima/Desktop/Projects/LITTLE-LEMON-FOLDER/little-lemon/src/imgs/restauranfood.jpg";
+import "../../App.js";
+import { Link } from "react-router-dom";
+import MainImg from "/Users/silviadima/Desktop/Projects/LITTLE-LEMON-FOLDER/little-lemon/src/assets/imgs/restauranfood.jpg";
 // import Form from "src/pages/Form.jsx";
 
 function Showcase() {
@@ -15,9 +16,9 @@ function Showcase() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <a href="book-online.html" className="btn btn-outline">
-              Online Menu
-            </a>
+            <Link className="btn btn-outline" to="/menu">
+              Menu
+            </Link>
           </div>
 
           <div className="showcase-form ">
