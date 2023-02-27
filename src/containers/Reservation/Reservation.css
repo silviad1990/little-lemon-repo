@@ -1,8 +1,9 @@
 .reservation {
-  padding-top: 100px;
-  height: 700px;
-  /* background-color: var(--primary-color-green); */
-  color: #000;
+  padding: 100px 0 50px 0;
+
+  height: fit-content;
+  background-color: var(--primary-color-green);
+  color: #fff;
   position: relative;
 }
 

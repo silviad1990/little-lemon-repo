@@ -1,7 +1,17 @@
 import "./Reservation.css";
 import Form from "/Users/silviadima/Desktop/Projects/LITTLE-LEMON-FOLDER/little-lemon/src/components/Form/Form.js";
+import { useReducer } from "react";
+import { fetchAPI } from "../../bookingsAPI";
 
 function Reservation() {
+  function updateTimes(date) {
+    return fetchAPI(date);
+  }
+
+  const output = fetchAPI(new Date());
+
+  const [availableTimes, dispatch] = useReducer(updateTimes, output);
+
   return (
     <section className="reservation main">
       <div className="container grid ">
@@ -20,7 +30,7 @@ function Reservation() {
           </p>
         </div>
         <div>
-          <Form />
+          <Form availableTimes={availableTimes} updateTimes={dispatch} />
         </div>
       </div>
     </section>

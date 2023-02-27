@@ -3,12 +3,12 @@
 .showcase {
   height: 500px;
   background-color: var(--primary-color-green);
-  color: #000;
+  color: #fff;
   position: relative;
 }
 
 .showcase h1 {
-  font-size: 50px;
+  font-size: 80px;
   margin-top: 20px;
   margin-bottom: 0;
 }

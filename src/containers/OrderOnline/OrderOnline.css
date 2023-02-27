@@ -1,6 +1,7 @@
 .specials {
   padding-top: 80px;
   padding-bottom: 40px;
+  height: fit-content;
 }
 
 .specials .grid {

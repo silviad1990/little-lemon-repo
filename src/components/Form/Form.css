@@ -1,7 +1,9 @@
 .wrapper {
   padding: 5px 20px;
+  border: none;
 }
 
 .wrapper fieldset {
   margin: 20px 0;
+  border: none;
 }

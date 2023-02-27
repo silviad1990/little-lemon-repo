@@ -1,116 +1,202 @@
-import { useReducer, useState } from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import Confirmation from "../Confirmation";
 
-const formReducer = (state, event) => {
-  if (event.reset) {
-    return {
-      sitting: "",
-      count: 2,
-      name: "",
-      date: "",
-      text: "",
-    };
+function Form(props) {
+  const [fName, setFName] = useState("");
+  const [lName, setLName] = useState("");
+  const [email, setEmail] = useState("");
+  const [tel, setTel] = useState("");
+  const [people, setPeople] = useState(1);
+  const [date, setDate] = useState("");
+  const [occasion, setOccasion] = useState("");
+  const [preferences, setPreferences] = useState("");
+  const [comments, setComments] = useState("");
+
+  const [finalTime, setFinalTime] = useState(
+    props.availableTimes.map((times) => <option>{times}</option>)
+  );
+
+  function handleDateChange(e) {
+    setDate(e.target.value);
+
+    var stringify = e.target.value;
+    const date = new Date(stringify);
+
+    props.updateTimes(date);
+
+    setFinalTime(props.availableTimes.map((times) => <option>{times}</option>));
   }
 
-  return {
-    ...state,
-    [event.name]: event.value,
-  };
-};
-
-function Form() {
-  const [formData, setFormData] = useReducer(formReducer, {
-    count: 2,
-  });
-  const [submitting, setSubmitting] = useState(false);
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    setSubmitting(true);
-
-    setTimeout(() => {
-      setSubmitting(false);
-      setFormData({
-        reset: true,
-      });
-    }, 3000);
-  };
-
-  const handleChange = (event) => {
-    setFormData({
-      name: event.target.name,
-      value: event.target.value,
-    });
-  };
-
   return (
-    <div className="wrapper">
+    <div className="form-card wrapper">
       <h1>Book a Table</h1>
-      {submitting && (
+
+      <form className="reservation-form">
         <div>
-          You are submitting the following:
-          <ul>
-            {Object.entries(formData).map(([name, value]) => (
-              <li key={name}>
-                <strong>{name}</strong>:{value.toString()}
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
-      <form onSubmit={handleSubmit}>
-        <fieldset disabled={submitting}>
-          <label>
-            <p>Name</p>
+          <label htmlFor="fName">
+            First Name:{" "}
             <input
-              name="name"
-              onChange={handleChange}
-              value={formData.name || ""}
-            />
-          </label>
-        </fieldset>
-        <fieldset disabled={submitting}>
-          <label>
-            <p>Sitting Options</p>
-            <select
-              name="sitting"
-              onChange={handleChange}
-              value={formData.sitting || ""}
-            >
-              <option value="">--Please choose an option--</option>
-              <option value="inside">Inside</option>
-              <option value="outside">Outside</option>
-            </select>
-          </label>
-          <label>
-            <p>Guests</p>
-            <input
-              type="number"
-              name="count"
-              onChange={handleChange}
-              step="1"
-              value={formData.count || ""}
-            />
-          </label>
-          <label form="date">
-            <p>Date</p>
-            <input
-              type="date"
-              id="start"
-              onChange={handleChange}
-              value={formData.date || ""}
+              type="text"
+              id="fName"
+              placeholder=""
+              required
+              minLength={2}
+              maxLength={50}
+              value={fName}
+              onChange={(e) => setFName(e.target.value)}
             ></input>
           </label>
-          <label form="text">
-            <p>Any specific requirements?</p>
+        </div>
+
+        <div>
+          <label htmlFor="lName">
+            Last Name:{" "}
+            <input
+              type="text"
+              id="lName"
+              placeholder=""
+              minLength={2}
+              maxLength={50}
+              value={lName}
+              onChange={(e) => setLName(e.target.value)}
+            ></input>
+          </label>
+        </div>
+
+        <div>
+          <label htmlFor="email">
+            Email:{" "}
+            <input
+              type="email"
+              id="email"
+              placeholder=""
+              value={email}
+              required
+              minLength={4}
+              maxLength={200}
+              onChange={(e) => setEmail(e.target.value)}
+            ></input>
+          </label>
+        </div>
+
+        <div>
+          <label htmlFor="phonenum">
+            Phone Number:{" "}
+            <input
+              type="tel"
+              id="phonenum"
+              placeholder="(xxx)-xxx-xxxx"
+              value={tel}
+              required
+              minLength={10}
+              maxLength={25}
+              onChange={(e) => setTel(e.target.value)}
+            ></input>
+          </label>
+        </div>
+
+        <div>
+          <label htmlFor="people">
+            Number of Guests:{" "}
+            <input
+              type="number"
+              id="people"
+              placeholder=""
+              value={people}
+              required
+              min={1}
+              max={100}
+              onChange={(e) => setPeople(e.target.value)}
+            ></input>
+          </label>
+        </div>
+
+        <div>
+          <label htmlFor="date">
+            Select Date:{" "}
+            <input
+              type="date"
+              id="date"
+              required
+              value={date}
+              onChange={handleDateChange}
+            ></input>
+          </label>
+        </div>
+
+        <div>
+          <label htmlFor="time">
+            Select Time:{" "}
+            <select id="time" required>
+              {finalTime}
+            </select>
+          </label>
+        </div>
+
+        <div>
+          <label htmlFor="occasion">
+            Occasion:{" "}
+            <select
+              id="occasion"
+              value={occasion}
+              onChange={(e) => setOccasion(e.target.value)}
+            >
+              <option>None</option>
+              <option>Birthday</option>
+              <option>Anniversary</option>
+              <option>Engagement</option>
+              <option>Other</option>
+            </select>
+          </label>
+        </div>
+
+        <div>
+          <label htmlFor="preferences">
+            Seating preferences:{" "}
+            <select
+              id="preferences"
+              value={preferences}
+              onChange={(e) => setPreferences(e.target.value)}
+            >
+              <option>None</option>
+              <option>Indoors</option>
+              <option>Outdoor (Patio)</option>
+              <option>Outdoor (Sidewalk)</option>
+            </select>
+          </label>
+        </div>
+
+        <div>
+          <label htmlFor="comments">
+            Special Requirements:{" "}
             <textarea
-              id="text"
-              name="text"
-              onChange={handleChange}
-              value={formData.text || ""}
+              id="comments"
+              rows={8}
+              cols={50}
+              placeholder="...please inform us about any alergies"
+              value={comments}
+              onChange={(e) => setComments(e.target.value)}
             ></textarea>
           </label>
-        </fieldset>
-        <button type="submit">Submit</button>
+        </div>
+
+        <div>
+          <small>
+            <p>
+              Note: You cannot edit your reservation after submission. Please
+              double-check your answer before submitting your reservation
+              request.
+            </p>
+          </small>
+          <Link
+            className="btn btn-online action-button"
+            to="/confirmation"
+            element={<Confirmation />}
+          >
+            Book Table
+          </Link>
+        </div>
       </form>
     </div>
   );

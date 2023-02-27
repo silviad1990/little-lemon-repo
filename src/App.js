@@ -8,6 +8,7 @@ import Menu from "./containers/Menu/Menu.js";
 import Reservation from "./containers/Reservation/Reservation.jsx";
 import OrderOnline from "./containers/OrderOnline/OrderOnline.js";
 import Contacts from "./containers/Contacts/Contacts.js";
+import Confirmation from "./components/Confirmation";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/reservation" element={<Reservation />} />
         <Route path="/order-online" element={<OrderOnline />} />
         <Route path="/contacts" element={<Contacts />} />
+        <Route path="/confirmation" element={<Confirmation />} />
       </Routes>
       <Footer />
     </>

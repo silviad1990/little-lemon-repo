@@ -1,0 +1,13 @@
+.confirmation {
+  padding-top: 100px;
+  height: 500px;
+  background-color: var(--primary-color-green);
+  color: #fff;
+  position: relative;
+}
+
+.confirmation .form-card {
+  background-color: var(--primary-color-yellow);
+  width: 50rem;
+  margin: auto;
+}
