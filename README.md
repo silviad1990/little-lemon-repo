@@ -15,8 +15,8 @@
   </p>
   
 <p align="center">
-    <img width="100" src="src/assets/imgs/readme/Little Lemon Restaurant - Homepage.png" alt="Little Lemon - Desktop" />
-    <img width="100" src="src/assets/imgs/readme/Little Lemon Restaurant - Tablet.png" alt="Little Lemon - Tablet" />
+    <img width="300" src="src/assets/imgs/readme/Little Lemon Restaurant - Homepage.png" alt="Little Lemon - Desktop" />
+    <img width="200" src="src/assets/imgs/readme/Little Lemon Restaurant - Tablet.png" alt="Little Lemon - Tablet" />
     <img width="100" src="src/assets/imgs/readme/Little Lemon Restaurant - Phone.png" alt="Little Lemon - Phone" />
    
 </p>
