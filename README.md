@@ -15,9 +15,9 @@
   </p>
   
 <p align="center">
-    <img src="src/assets/imgs/readme/Little Lemon Restaurant - Homepage.png" alt="Little Lemon - Desktop" />
-    <img src="src/assets/imgs/readme/Little Lemon Restaurant - Tablet.png" alt="Little Lemon - Tablet" />
-    <img src="src/assets/imgs/readme/Little Lemon Restaurant - Phone.png" alt="Little Lemon - Phone" />
+    <img width="100" src="src/assets/imgs/readme/Little Lemon Restaurant - Homepage.png" alt="Little Lemon - Desktop" />
+    <img width="100" src="src/assets/imgs/readme/Little Lemon Restaurant - Tablet.png" alt="Little Lemon - Tablet" />
+    <img width="100" src="src/assets/imgs/readme/Little Lemon Restaurant - Phone.png" alt="Little Lemon - Phone" />
    
 </p>
 
