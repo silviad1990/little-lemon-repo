@@ -4,6 +4,7 @@
 }
 
 .specials .grid {
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
 }
@@ -13,7 +14,6 @@
   text-align: center;
 }
 .specials-heading {
-  font-size: 35px;
   max-width: 500px;
   margin: auto;
 }
@@ -24,7 +24,6 @@
 }
 
 .card-image img {
-  width: 25vw;
   height: 15rem;
   object-fit: cover;
   max-height: 100%;
@@ -33,7 +32,6 @@
 }
 
 .card-heading {
-  font-size: 18px;
   font-weight: bold;
   background: #fff;
   padding: 10px 15px;
@@ -70,4 +68,21 @@
   text-decoration: none;
   background-color: #f4ce14;
   color: #000;
+}
+
+/* MEDIA QUERIES*/
+/* Tablet */
+@media screen and (min-width: 400px) and (max-width: 900px) {
+}
+
+/* Phone */
+@media screen and (max-width: 400px) {
+  .specials .grid * {
+    grid-column: 1 / span 3;
+  }
+  .specials-heading {
+    font-size: 45px;
+    max-width: 500px;
+    margin: auto;
+  }
 }

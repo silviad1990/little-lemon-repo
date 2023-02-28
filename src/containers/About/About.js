@@ -6,7 +6,7 @@ function About() {
       <section className="about my-2 py-2">
         <div className="container grid">
           <div>
-            <h2 className="md">About Us</h2>
+            <h2 className="lg">About Us</h2>
             <h3>Little Lemon</h3>
             <p className="my-1">
               Based in Chicago, Illinois, Little Lemon is a family owned

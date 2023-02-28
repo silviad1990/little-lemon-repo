@@ -14,7 +14,6 @@
   text-align: center;
 }
 .specials-heading {
-  font-size: 35px;
   max-width: 500px;
   margin: auto;
 }
@@ -25,7 +24,6 @@
 }
 
 .card-image img {
-  width: 25vw;
   height: 15rem;
   object-fit: cover;
   max-height: 100%;
@@ -34,7 +32,6 @@
 }
 
 .card-heading {
-  font-size: 18px;
   font-weight: bold;
   background: #fff;
   padding: 10px 15px;

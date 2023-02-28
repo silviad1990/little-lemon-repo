@@ -72,3 +72,33 @@
   -webkit-transform: skewY(-2deg);
   -ms-transform: skewY(-2deg);
 }
+
+/* MEDIA QUERIES*/
+/* Tablet */
+@media screen and (min-width: 391px) and (max-width: 900px) {
+  .main {
+    padding-top: 0;
+  }
+  .showcase-form {
+    position: relative;
+    top: 0;
+    height: 450px;
+    width: 400px;
+    padding-left: 55px;
+    z-index: 1;
+  }
+}
+/* Phone */
+@media screen and (max-width: 390px) {
+  .showcase .grid {
+    grid-template-columns: 100%;
+  }
+
+  .showcase-img {
+    visibility: hidden;
+    overflow: hidden;
+  }
+  .main {
+    padding-top: 0;
+  }
+}

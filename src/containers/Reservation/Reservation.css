@@ -17,3 +17,15 @@
 .reservation .container h1 {
   grid-column: 1 / span 2;
 }
+
+/* MEDIA QUERIES*/
+/* Tablet */
+@media screen and (min-width: 400px) and (max-width: 900px) {
+}
+
+/* Phone */
+@media screen and (max-width: 400px) {
+  .reservation .grid * {
+    grid-column: 1 / span 3;
+  }
+}

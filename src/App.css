@@ -5,9 +5,17 @@
 }
 
 body {
-  font-family: "Karla", sans-serif;
+  font-family: "Markazi Text", "Karla", serif;
   color: #000;
   line-height: 1.2;
+}
+
+label,
+input,
+select,
+textarea,
+p {
+  font-family: "Karla";
 }
 
 ul {
@@ -204,4 +212,12 @@ img {
 }
 .p-5 {
   padding: 4rem;
+}
+
+/* MEDIA QUERIES*/
+/* Tablet */
+@media screen and (min-width: 321px) and (max-width: 768px) {
+}
+/* Phone */
+@media screen and (max-width: 320px) {
 }

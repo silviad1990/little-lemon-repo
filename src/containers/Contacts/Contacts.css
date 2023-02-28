@@ -1,0 +1,15 @@
+/* MEDIA QUERIES*/
+/* Tablet */
+@media screen and (min-width: 400px) and (max-width: 900px) {
+}
+
+/* Phone */
+@media screen and (max-width: 400px) {
+  .contacts .grid * {
+    grid-column: 1 / span 2;
+  }
+
+  .contacts img {
+    padding: 0;
+  }
+}

@@ -16,7 +16,7 @@ function Showcase() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <Link className="btn btn-outline" to="/menu">
+            <Link className="btn btn-outline md" to="/menu">
               Menu
             </Link>
           </div>

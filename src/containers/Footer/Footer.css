@@ -21,3 +21,20 @@
 .social-img {
   width: 30px;
 }
+
+/* MEDIA QUERIES*/
+/* Tablet */
+@media screen and (min-width: 400px) and (max-width: 900px) {
+}
+
+/* Phone */
+@media screen and (max-width: 400px) {
+  .footer .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .footer .grid > *:first-child {
+    grid-row: 1 / span 3;
+  }
+}

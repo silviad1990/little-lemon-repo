@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Confirmation from "../Confirmation";
+import "./Form.css";
 
 function Form(props) {
   const [fName, setFName] = useState("");
@@ -173,7 +174,6 @@ function Form(props) {
             <textarea
               id="comments"
               rows={8}
-              cols={50}
               placeholder="...please inform us about any alergies"
               value={comments}
               onChange={(e) => setComments(e.target.value)}
