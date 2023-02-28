@@ -15,8 +15,11 @@
   </p>
   
 <p align="center">
+<h4>Desktop</h4>
     <img width="500" src="src/assets/imgs/readme/Little Lemon Restaurant - Homepage.png" alt="Little Lemon - Desktop" />
+    <h4>Tablet</h4>
     <img width="300" src="src/assets/imgs/readme/Little Lemon Restaurant - Tablet.png" alt="Little Lemon - Tablet" />
+    <h4>Phone</h4>
     <img width="100" src="src/assets/imgs/readme/Little Lemon Restaurant - Phone.png" alt="Little Lemon - Phone" />
    
 </p>
