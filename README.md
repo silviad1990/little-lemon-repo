@@ -2,6 +2,8 @@
 
 <h2 align="center">A React.js App</h2>
 
+<h3 align="center">Try the demo <a href="https://little-lemon-restaurant-one.vercel.app/">here</a></h3>
+
 <br />
 <p align="center">
     <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="Reactjs" />
