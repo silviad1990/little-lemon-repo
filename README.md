@@ -2,7 +2,7 @@
 
 <h2 align="center">A React.js App</h2>
 
-<h3 align="center">Try the demo <a href="https://little-lemon-restaurant-one.vercel.app/">here</a></h3>
+<h3 align="center">Try the demo <a href="https://little-lemon-repo-viki.vercel.app/">here</a></h3>
 
 <br />
 <p align="center">
