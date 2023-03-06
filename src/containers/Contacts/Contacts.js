@@ -1,5 +1,5 @@
 import "./Contacts.css";
-import map from "/Users/silviadima/Desktop/Projects/LITTLE-LEMON-FOLDER/little-lemon/src/assets/imgs/map.jpg";
+import map from "../../assets/imgs/map.jpg";
 
 function Contacts() {
   return (

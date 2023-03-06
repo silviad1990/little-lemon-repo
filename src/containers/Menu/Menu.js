@@ -1,4 +1,4 @@
-import menu from "/Users/silviadima/Desktop/Projects/LITTLE-LEMON-FOLDER/little-lemon/src/assets/imgs/menu-template.webp";
+import menu from "../../assets/imgs/menu-template.webp";
 
 function Menu() {
   return (

@@ -1,5 +1,5 @@
 import "./Reservation.css";
-import Form from "/Users/silviadima/Desktop/Projects/LITTLE-LEMON-FOLDER/little-lemon/src/components/Form/Form.js";
+import Form from "../../components/Form/Form.js";
 import { useReducer } from "react";
 import { fetchAPI } from "../../bookingsAPI";
 

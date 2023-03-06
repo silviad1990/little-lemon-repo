@@ -1,5 +1,5 @@
 import "./About.css";
-import ownerImg from "/Users/silviadima/Desktop/Projects/LITTLE-LEMON-FOLDER/little-lemon/src/assets/imgs/Mario and Adrian b.jpg";
+import ownerImg from "../../assets/imgs/Mario and Adrian b.jpg";
 function About() {
   return (
     <>

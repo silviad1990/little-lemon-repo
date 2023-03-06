@@ -1,7 +1,7 @@
 import "./Showcase.css";
 import "../../App.js";
 import { Link } from "react-router-dom";
-import MainImg from "/Users/silviadima/Desktop/Projects/LITTLE-LEMON-FOLDER/little-lemon/src/assets/imgs/restauranfood.jpg";
+import MainImg from "../../assets/imgs/restauranfood.jpg";
 // import Form from "src/pages/Form.jsx";
 
 function Showcase() {

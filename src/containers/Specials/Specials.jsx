@@ -1,7 +1,7 @@
 import "./Specials.css";
-import saladImg from "/Users/silviadima/Desktop/Projects/LITTLE-LEMON-FOLDER/little-lemon/src/assets/imgs/salad.jpg";
-import bruschettaImg from "/Users/silviadima/Desktop/Projects/LITTLE-LEMON-FOLDER/little-lemon/src/assets/imgs/bruschetta.jpg.webp";
-import cakeImg from "/Users/silviadima/Desktop/Projects/LITTLE-LEMON-FOLDER/little-lemon/src/assets/imgs/lemon-cake.png";
+import saladImg from "../../assets/imgs/salad.jpg";
+import bruschettaImg from "../../assets/imgs/bruschetta.jpg.webp";
+import cakeImg from "../../assets/imgs/lemon-cake.png";
 
 function Specials() {
   return (
@@ -23,7 +23,7 @@ function Specials() {
               accusantium doloremque laudantium, totam rem aperiam.
             </div>
             <div className="card-price">£7,99</div>
-            <a href="./" className="card-button">
+            <a href="./order-online" className="card-button">
               {" "}
               Order for delivery
             </a>
@@ -39,7 +39,7 @@ function Specials() {
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </div>
             <div className="card-price">£7,40</div>
-            <a href="./" className="card-button">
+            <a href="./order-online" className="card-button">
               {" "}
               Order for delivery
             </a>
@@ -55,7 +55,7 @@ function Specials() {
               corporis suscipit laboriosam.
             </div>
             <div className="card-price">£6,00</div>
-            <a href="./" className="card-button">
+            <a href="./order-online" className="card-button">
               {" "}
               Order for delivery
             </a>

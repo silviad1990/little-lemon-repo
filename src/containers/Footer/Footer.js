@@ -1,5 +1,5 @@
 import "./Footer.css";
-import logo2 from "/Users/silviadima/Desktop/Projects/LITTLE-LEMON-FOLDER/little-lemon/src/assets/imgs/Asset 20@4x.png";
+import logo2 from "../../assets/imgs/Asset 20@4x.png";
 
 function Footer() {
   return (
@@ -13,22 +13,17 @@ function Footer() {
             <h3 className="py-2">Doormat Navigation</h3>
             <ul>
               <li>
-                <a href="index.html">Home</a>
+                <a href="./">Home</a>
+              </li>
+
+              <li>
+                <a href="./menu">Menu</a>
               </li>
               <li>
-                <a href="about.html">About</a>
+                <a href="./reservation">Reservation</a>
               </li>
               <li>
-                <a href="menu.html">Menu</a>
-              </li>
-              <li>
-                <a href="reservation.html">Reservation</a>
-              </li>
-              <li>
-                <a href="book-online.html">Book Online</a>
-              </li>
-              <li>
-                <a href="login.html">Login</a>
+                <a href="./order-online">Book Online</a>
               </li>
             </ul>
           </div>

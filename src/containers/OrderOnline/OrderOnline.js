@@ -1,6 +1,6 @@
-import ubereats from "/Users/silviadima/Desktop/Projects/LITTLE-LEMON-FOLDER/little-lemon/src/assets/imgs/uber-eats.jpeg";
-import justeat from "/Users/silviadima/Desktop/Projects/LITTLE-LEMON-FOLDER/little-lemon/src/assets/imgs/just-eat.png";
-import deliveroo from "/Users/silviadima/Desktop/Projects/LITTLE-LEMON-FOLDER/little-lemon/src/assets/imgs/deliveroo.jpeg";
+import ubereats from "../../assets/imgs/uber-eats.jpeg";
+import justeat from "../../assets/imgs/just-eat.png";
+import deliveroo from "../../assets/imgs/deliveroo.jpeg";
 import "./OrderOnline.css";
 function OrderOnline() {
   return (
